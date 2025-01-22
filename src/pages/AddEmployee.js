@@ -19,7 +19,7 @@ const AddEmployee = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5050/api/employees', {
+      const response = await fetch('https://employeebackend-cyan.vercel.app//api/employees', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
