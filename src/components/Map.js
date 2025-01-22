@@ -10,7 +10,9 @@ const customIcon = new Icon({
 
 const Map = ({ employees }) => {
   return (
+    
     <MapContainer center={[20, 78]} zoom={4}>
+      
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"

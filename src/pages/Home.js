@@ -13,6 +13,8 @@ const Home = () => {
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
+
+
   const filteredEmployees = data.filter(
     (employee) =>
       employee.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -31,7 +33,10 @@ const Home = () => {
         <SearchBar search={search} setSearch={setSearch}/>
       </div>
 
+      
+
       <div className="employee-container">
+      <div>Click on the employee to see details.</div>
   {filteredEmployees.length > 0 ? (
     <ul className="employee-list">
       {filteredEmployees.map((employee) => (
@@ -54,7 +59,9 @@ const Home = () => {
 
       
       <div>
+        
       <Map employees={filteredEmployees} />
+      <div>Click the marker on map to see employee details.</div>
         {selectedEmployee && (
           <EmployeeDetailsCard
             employee={selectedEmployee}

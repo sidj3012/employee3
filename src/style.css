@@ -128,14 +128,23 @@ background: linear-gradient(90deg, rgba(168,167,176,1) 0%, rgba(189,189,190,1) 7
   }
   
  @media (max-width: 400px){
+  
+
   .topbar{
     flex-direction: column;
   }
+
+.searchbar{
+  max-width:200px;
+  align-self: center;
+  margin: auto;
+}
 
   .add-employee-button{
     align-self: center;
     margin-top: 0.7em;
     font-size: 1em;
+    margin-bottom: 1em;
   }
 
   .employee-container {
@@ -148,6 +157,12 @@ background: linear-gradient(90deg, rgba(168,167,176,1) 0%, rgba(189,189,190,1) 7
     height: 40vh;
     width: 40vh;
     margin: auto;
+  }
+
+  .add-employee-container {
+    width: 200px;
+    
+
   }
  }
 
