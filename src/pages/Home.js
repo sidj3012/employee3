@@ -10,7 +10,14 @@ const Home = () => {
   const [search, setSearch] = useState("");
   const [selectedEmployee, setSelectedEmployee] = useState(null);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) {
+    return (
+      <div className="loading-container">
+        <div className="spinner"></div>
+        <p>Loading employees, please wait...</p>
+      </div>
+    );
+  }
   if (error) return <p>Error: {error.message}</p>;
 
 
