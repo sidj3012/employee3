@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #FBEAEB;
+  background: rgb(168,167,176);
+background: linear-gradient(90deg, rgba(168,167,176,1) 0%, rgba(189,189,190,1) 7%, rgba(133,133,142,1) 63%, rgba(72,74,74,1) 100%);
 }
 
 .main-container {
@@ -25,12 +26,12 @@ body {
 }
 .heading-1{
   margin: auto;
-  
+  font-size: 2em;
 }
 .add-employee-button{
   text-decoration: none;
   align-self: flex-end;
-  background-color: #2F3C7E;
+  background-color: black;
   color: #FBEAEB;
   padding: 0.6em;
   padding-left: 2em;
@@ -101,7 +102,7 @@ body {
 }
 
 .employee-address {
-  color: #777;
+  color:white;
   flex: 1;
   text-align: right;
 }
@@ -115,7 +116,7 @@ body {
 
 .leaflet-container{
   height: 65vh;
-  width: 50%;
+  width: 65vh;
   margin: auto;
   border: 0.2em solid black;
   border-radius: 1em;
@@ -144,8 +145,8 @@ body {
   }
 
   .leaflet-container{
-    height: 50vh;
-    width: 100%;
+    height: 40vh;
+    width: 40vh;
     margin: auto;
   }
  }
